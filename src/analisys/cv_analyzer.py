@@ -42,7 +42,6 @@ class CVAnalyzer:
         return response.choices[0].message.content
 
 if __name__ == "__main__":
-    # Test için
     cv_text = read_pdf("examples/HikmetTopakCV.pdf")
     with open("/Users/hikmettopak/Desktop/Projects/CVMaker/examples/ilan.txt", "r", encoding="utf-8") as f:
         job_reqs = f.read()
