@@ -7,16 +7,12 @@ load_dotenv()
 
 class CVAnalyzer:
     def __init__(self):
-        # OpenAI istemcisini başlat
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise ValueError("OPENAI_API_KEY bulunamadı. Lütfen .env dosyasına ekleyin.")
         self.client = OpenAI(api_key=api_key)
 
     def generate_suggestions(self, cv_text, job_requirements):
-        """
-        CV ve iş gereksinimlerini OpenAI’ye gönderip öneriler alır.
-        """
         prompt = f"""
         Aşağıdaki CV ve iş ilanı metinlerini analiz et. İş ilanında belirtilen gereksinimlere göre CV’yi nasıl iyileştirebileceğime dair spesifik öneriler sun. Türkçe cevap ver.
 
