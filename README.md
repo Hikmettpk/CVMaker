@@ -8,6 +8,7 @@ CVMaker, iş veya staj arayan öğrencilerin CV'lerini iş ilanlarına göre opt
 - İş ilanlarına göre CV optimizasyonu
 - Anahtar kelimelere göre CV içeriği önerisi
 - OpenAI GPT entegrasyonu ile akıllı öneriler
+- Streamlit ile kullanıcı dostu arayüz
 
 ## 📋 Gereksinimler
 
@@ -52,22 +53,26 @@ OPENAI_API_KEY=your_api_key_here
 
 ## 🎯 Kullanım
 
-1. CV'nizi PDF formatında `input` klasörüne yerleştirin
-
-2. Uygulamayı çalıştırın:
-python src/main.py
+1. Uygulamayı çalıştırın:
+streamlit run app.py
 
 
-3. Konsol üzerinden gelen yönergeleri takip edin:
-   - CV'nizin dosya adını girin
+2. Tarayıcınızda otomatik olarak açılan arayüzü kullanın:
+   - CV'nizi PDF formatında yükleyin
    - Hedeflediğiniz pozisyonun iş ilanını yapıştırın
+   - "CV'yi Analiz Et" butonuna tıklayın
    - Optimizasyon önerilerini inceleyin
 
-## 📝 Örnek Kullanım
+## 🌐 Canlıya Alma
 
-Test amaçlı örnek bir CV ile denemek için:
-python src/data_processing/pdf_reader.py
+Streamlit uygulamanızı ücretsiz olarak canlıya almak için:
 
+1. [Streamlit Community Cloud](https://streamlit.io/cloud) hesabı oluşturun
+2. GitHub'a projenizi yükleyin (özel repo olabilir)
+3. Streamlit Cloud'da "New app" butonuna tıklayın
+4. GitHub reponuzu seçin ve app.py dosyasını belirtin
+5. Gerekli gizli değişkenleri (OPENAI_API_KEY) ekleyin
+6. "Deploy" butonuna tıklayın
 
 ## 🤝 Katkıda Bulunma
 
@@ -81,3 +86,4 @@ python src/data_processing/pdf_reader.py
 
 - `.env` dosyanızı asla GitHub'a push etmeyin
 - Büyük CV dosyaları için işlem süresi uzayabilir
+- Streamlit Community Cloud'da uygulamanızı canlıya alırken API anahtarınızı gizli değişken olarak ekleyin
