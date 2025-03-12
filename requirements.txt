@@ -1,4 +1,5 @@
 # requirements.txt
 pdfplumber==0.10.4    # PDF’den metin çıkarmak için
 openai      # OpenAI API istemcisi
-python-dotenv==1.0.0  # .env dosyasını okumak için
+python-dotenv==1.0.0 # .env dosyasını okumak için
+flask
