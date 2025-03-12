@@ -18,7 +18,7 @@ CVMaker, iş veya staj arayan öğrencilerin CV'lerini iş ilanlarına göre opt
 ## ⚙️ Kurulum
 
 1. Projeyi klonlayın:
-bash
+
 git clone https://github.com/kullanici_adiniz/CVMaker.git
 cd CVMaker
 
@@ -26,18 +26,15 @@ cd CVMaker
 2. Sanal ortam oluşturun ve aktif edin:
 
 Linux/macOS için:
-bash
 python3 -m venv venv
 
 
 Windows için:
-bash
 python -m venv venv
 venv\Scripts\activate
 
 
 3. Gerekli kütüphaneleri yükleyin:
-bash
 pip install -r requirements.txt
 
 
@@ -53,7 +50,6 @@ OPENAI_API_KEY=your_api_key_here
 1. CV'nizi PDF formatında `input` klasörüne yerleştirin
 
 2. Uygulamayı çalıştırın:
-bash
 python src/main.py
 
 
