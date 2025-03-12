@@ -20,21 +20,26 @@ CVMaker, iş veya staj arayan öğrencilerin CV'lerini iş ilanlarına göre opt
 1. Projeyi klonlayın:
 
 git clone https://github.com/kullanici_adiniz/CVMaker.git
+
 cd CVMaker
 
 
 2. Sanal ortam oluşturun ve aktif edin:
 
 Linux/macOS için:
+
 python3 -m venv venv
 
 
 Windows için:
+
 python -m venv venv
+
 venv\Scripts\activate
 
 
 3. Gerekli kütüphaneleri yükleyin:
+
 pip install -r requirements.txt
 
 
@@ -61,7 +66,6 @@ python src/main.py
 ## 📝 Örnek Kullanım
 
 Test amaçlı örnek bir CV ile denemek için:
-bash
 python src/data_processing/pdf_reader.py
 
 
