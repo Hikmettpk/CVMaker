@@ -57,7 +57,7 @@ def analyze_cv_with_openai(cv_text, job_description, api_key):
         """
         
         response = client.chat.completions.create(
-            model="gpt-4-0125-preview",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "Sen bir CV ve kariyer danışmanısın. İş arayanların CV'lerini iş ilanlarına göre optimize etmelerine yardımcı oluyorsun."},
                 {"role": "user", "content": prompt}
