@@ -40,7 +40,13 @@ def analyze_cv_with_openai(cv_text, job_description, api_key):
         return None
         
     try:
-        client = OpenAI(api_key=api_key)
+        import httpx
+        http_client = httpx.Client()
+
+        client = OpenAI(
+            api_key=api_key,
+            http_client=http_client
+        )
         
         prompt = f"""
         Verilen CV ve iş ilanı metinlerini detaylı olarak analiz et. 
